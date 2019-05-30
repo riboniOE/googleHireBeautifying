@@ -1,0 +1,18 @@
+{
+  "name": "Google Hire Beautifying",
+  "description": "Add some colors and functions to Google Hire",
+  "version": "0.0.0",
+  "icons": {
+    "32": "hire_32.png",
+    "16": "hire_16.png",
+    "48": "hire_48.png",
+    "128": "hire_128.png"
+  },
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["jquery.min.js", "content.js"],
+    "matches": ["https://hire.withgoogle.com/*"],
+    "run_at": "document_end"
+  }],
+  "manifest_version": 2
+}
